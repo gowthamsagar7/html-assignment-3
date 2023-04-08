@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+    <style>
+        .star{
+            color: red;
+        }
+        body{
+            margin-top: 50px;
+            margin-left: 100px;
+            margin-right: 300px;
+            border: 3px solid black;
+            padding: 30px;
+        }
+        hr{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>INTERNSHIP APPLICATION FORM</h1>
+    <hr>
+    <br>
+     <form>
+        <label for="fname"><u>FIRST NAME</u><i class="star">*</i>:</label>
+        <input type="text" id="fname" required><br><br>
+        <label for="mname"><u>MIDLLE NAME</u>:</label>
+        <input type="text" id="mname" ><br><br>
+        <label for="lname"><u>LAST NAME</u><i class="star">*</i>:</label>
+        <input type="text" id="lname" required><br><br>
+        <label for="dob"><u>DATE OF BIRTH</u><i class="star">*</i>:</label>
+        <input type="date" id="dob" required><br><br>
+        <label for="contact"><u>CONTACT NUMBER</u><i class="star">*</i>:</label>
+        <input type="number" id="contact" required><br><br>
+        <label for="mail"><u>MAIL ID</u>:</label>
+        <input type="email" id="mail" ><br><br>
+        <label for="gender"><u>GENDER</u><i class="star">*</i>:</label><br><br>
+        <input type="radio"  name="gender">
+        <label for="male">MALE</label><br><br>
+        <input type="radio"  name="gender">
+        <label for="female">FEMALE</label><br><br>
+        <input type="radio"  name="gender">
+        <label for="others">OTHERS</label><br><br>
+        <p><u>SELECT THE PROGRAMMING LANGUAGES YOU ARE FAMILIAR WITH</u><i class="star">*</i>:</p>
+        <input type="checkbox"  id="c">
+        <label for="c">C LANGUAGE</label><br><br>
+        <input type="checkbox"  id="c++">
+        <label for="c++">C++</label><br><br>
+        <input type="checkbox"  id="python">
+        <label for="python">PYTHON</label><br><br>
+        <input type="checkbox"  id="java">
+        <label for="java">JAVA</label><br><br>
+        <label for="duration"><u>CHOOSE INTERNSHIP DURATION</u><i class="star">*</i>:</label>
+        <select  id="duration">
+            <option value="2-4">2-4 MONTHS</option>
+            <option value="4-6">4-6 MONTHS</option>
+            <option value="6-8">6-8 MONTHS</option>            
+        </select><br><br>
+        <p>NOTE:<i>"fields marked with <i class="star">*</i> are mandatory to fill"</i></p>
+        <input type="submit" id="submit">
+
+    </form>
+</body>
+</html>
